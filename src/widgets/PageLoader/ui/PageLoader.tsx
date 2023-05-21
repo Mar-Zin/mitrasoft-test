@@ -4,6 +4,6 @@ import './PageLoader.css'
 export const PageLoader = () => {
   return ( 
           <div className='pageLoader'> 
-              <Spinner animation="border" />
+              <Spinner animation="grow" variant='info'/>
           </div>
 )}
