@@ -1,22 +1,14 @@
-import { useAppSelector } from "../../../shared/store";
-import Spinner from "react-bootstrap/esm/Spinner";
-import { commentsSelector, isLoadingCommentsSelector } from "../../../shared/store/comments";
+import { CommentsType } from "../../../types/api";
 import Comment from "../Comment/Comment";
 
-const CommentsList = () => {
-    const comments = useAppSelector(commentsSelector)
-    const isLoadingComments = useAppSelector(isLoadingCommentsSelector)
+interface CommentsListType {
+    filtredComments: CommentsType[]
+}
 
-    return (
-    <>
-            {isLoadingComments 
-                ? 
-                <Spinner animation="grow" variant='info'/> 
-                : 
-                comments.map(comment => <Comment {...comment}/> )}
+const CommentsList = ({filtredComments} : CommentsListType) => {
+    return  <>
+    {filtredComments.map((comment:CommentsType) => <Comment {...comment} key={comment.id}/>)}
     </>
-    )
-     
 };
  
 export default CommentsList;

@@ -1,11 +1,11 @@
 import { useCallback, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../shared/store";
 import { hasErrorSelector, isLoadingSelector, postsActions } from "../../../shared/store/posts";
-import Spinner from "react-bootstrap/esm/Spinner";
 import Button from "react-bootstrap/esm/Button";
 import Container from 'react-bootstrap/Container';
 import PostList from "../../../entities/Posts/PostsList/PostList";
 import './MainPage.css'
+import { PageLoader } from "../../../widgets/PageLoader/ui/PageLoader";
 
 
 const MainPage = () => {
@@ -24,11 +24,8 @@ const MainPage = () => {
 
 
 
-
     if (isLoading) {
-        return (
-            <Spinner animation="grow" variant='info'/>
-        );
+        return <PageLoader/>
     }
 
     if (hasError) {
@@ -42,7 +39,7 @@ const MainPage = () => {
 
       return (
         <Container>
-            <PostList/>
+            <PostList />
         </Container>
     );
 

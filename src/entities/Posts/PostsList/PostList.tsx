@@ -8,12 +8,12 @@ const PostList = () => {
     const posts = useAppSelector(postsSelector)
 
     return ( 
-        <>
-        {posts.map((post: PostType) => (
-            <Post {...post}/>
-        ))}
-        </>
-     );
+            <>
+                {posts.map((post: PostType) => (
+                    <Post {...post} key={post.id}/>
+                ))}
+            </>
+    );
 }
  
 export default PostList;
