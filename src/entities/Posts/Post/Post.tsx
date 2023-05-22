@@ -10,11 +10,12 @@ import { CommentsType, PostType } from '../../../types/api';
 import { FC, useState } from 'react';
 import Spinner from "react-bootstrap/esm/Spinner";
 import Collapse from 'react-bootstrap/Collapse';
+import { Link } from 'react-router-dom';
 
 
 
 const Post:FC<PostType> = ( props ) => {
-    const { id, body, title } = props
+    const { id, body, title, userId } = props
     const [fakeLoading, setFakeLoading] = useState<boolean>(false)
     const [open, setOpen] = useState(false);
 
@@ -45,7 +46,9 @@ const Post:FC<PostType> = ( props ) => {
             <Col>
                 <Card border="primary">
                     <Card.Header className="bg-primary">
-                        <img src={avatar} alt="avatar"/>
+                        <Link to={`users/${userId}`}>
+                            <img src={avatar} alt="avatar"/>
+                        </Link>
                     </Card.Header>
                     <Card.Body>
                         <Card.Title>{title}</Card.Title>

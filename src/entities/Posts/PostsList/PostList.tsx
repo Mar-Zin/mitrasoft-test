@@ -1,15 +1,15 @@
-import {  useAppSelector } from "../../../shared/store";
-import { postsSelector } from "../../../shared/store/posts";
 import {  PostType } from "../../../types/api";
 import Post from "../Post/Post";
 
 
-const PostList = () => {
-    const posts = useAppSelector(postsSelector)
+interface PostListProps {
+    posts: PostType[]
+}
 
+const PostList = ({posts}:PostListProps) => {
     return ( 
             <>
-                {posts.map((post: PostType) => (
+                {posts.map((post) => (
                     <Post {...post} key={post.id}/>
                 ))}
             </>

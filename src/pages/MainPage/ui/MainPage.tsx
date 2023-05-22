@@ -1,17 +1,19 @@
 import { useCallback, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../shared/store";
-import { hasErrorSelector, isLoadingSelector, postsActions } from "../../../shared/store/posts";
+import { hasErrorSelector, isLoadingSelector, postsActions, postsSelector } from "../../../shared/store/posts";
 import Button from "react-bootstrap/esm/Button";
 import Container from 'react-bootstrap/Container';
 import PostList from "../../../entities/Posts/PostsList/PostList";
-import './MainPage.css'
 import { PageLoader } from "../../../widgets/PageLoader/ui/PageLoader";
+import './MainPage.css'
 
 
 const MainPage = () => {
     const dispatch = useAppDispatch()
+    const posts = useAppSelector(postsSelector)
     const isLoading = useAppSelector(isLoadingSelector)
     const hasError = useAppSelector(hasErrorSelector)
+    
 
 
     useEffect(() => {
@@ -39,7 +41,7 @@ const MainPage = () => {
 
       return (
         <Container>
-            <PostList />
+            <PostList posts={posts}/>
         </Container>
     );
 

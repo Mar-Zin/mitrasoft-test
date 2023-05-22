@@ -1,7 +1,9 @@
 import { CaseReducer, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { PostType } from "../../../types/api";
 
-
+type RequestParams = {
+    userId: string | undefined
+}
 
 type PostsStateType = {
   posts: PostType[];
@@ -24,6 +26,13 @@ const request: CaseReducer<PostsStateType> = (
   state.hasError = false;
 };
 
+const requestByUserId: CaseReducer<PostsStateType, PayloadAction<RequestParams>> = (
+    state
+) => {
+    state.isLoading = true;
+    state.hasError = false;
+};
+
 const success: CaseReducer<PostsStateType, PayloadAction<PostType[]>> = (
   state,
   { payload }
@@ -37,8 +46,6 @@ const failure: CaseReducer<PostsStateType> = (state) => {
   state.hasError = true;
 };
 
-
-
 export const { actions: postsActions, reducer: postsReducer } = createSlice({
   name: NAME,
   initialState,
@@ -46,5 +53,6 @@ export const { actions: postsActions, reducer: postsReducer } = createSlice({
     request,
     success,
     failure,
+    requestByUserId,
   },
 });

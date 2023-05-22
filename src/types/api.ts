@@ -2,7 +2,7 @@ export type PostType = {
     body: string
     id: number
     title: number
-    userId: string 
+    userId: number 
 }
 
 export type CommentsType = {
@@ -11,4 +11,28 @@ export type CommentsType = {
     name: string
     email: string
     body: string
+}
+
+export type UserType = {
+    id: number
+    name: string
+    username: string
+    email: string
+    address: {
+        street: string
+        suite: string
+        city: string
+        zipcode: string
+        geo: {
+            lat: string
+            lng: string
+        }
+    },
+    phone: string
+    website: string
+    company: {
+        name: string
+        catchPhrase: string
+        bs: string
+    }
 }
