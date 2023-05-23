@@ -25,7 +25,9 @@ const UserPage = () => {
         dispatch(userActions.request({userId}))
     }, [dispatch, userId])
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     return (
         <>

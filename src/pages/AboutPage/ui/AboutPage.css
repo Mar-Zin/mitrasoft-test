@@ -1,0 +1,92 @@
+header {
+    text-align: center;
+    }
+    
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 28px;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    
+    .info {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 700px) {
+      .info {
+        text-align: center;
+        display: block;
+      }
+    }
+    
+    .info-text {
+        margin: 10px 0 0 20px;
+    }
+    .info-text__item {
+        margin-bottom: 5px;
+    }
+    
+    .about-container {
+      max-width: 750px;
+      margin: auto;
+      padding-top: 20px;
+    }
+    
+    .skills {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .bg-yellow {
+      background: #fff9dc;
+      
+    }
+    
+    .bg-green {
+      background: #e5ffe7;
+    }
+    
+    .bg-sea {
+      background: rgb(205, 231, 227);
+    }
+    
+    .about-card {
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+    }
+    
+    .about-card h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .list {
+      padding: 0 20px;
+    }
+    
+    .list li {
+      margin-bottom: 10px;
+      color: black;
+    }
+    .list li a {
+        color: red
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-around;
+     
+    }
+    .telegram, .github, .vk{
+      width: 100px;
+      border-radius: 50%;
+    }
+ 
+    .icons a:hover{
+      border-radius: 50%;
+      box-shadow: -2px 0px 52px 24px rgba(6, 61, 211, 0.46);
+     
+    }
+    
