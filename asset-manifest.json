@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.a459d8d7.css",
-    "main.js": "/static/js/main.21d5d16e.js",
-    "static/css/21.319d6774.chunk.css": "/static/css/21.319d6774.chunk.css",
-    "static/js/21.9cfc0db2.chunk.js": "/static/js/21.9cfc0db2.chunk.js",
-    "static/css/808.60bd2ba0.chunk.css": "/static/css/808.60bd2ba0.chunk.css",
-    "static/js/808.a04b33d3.chunk.js": "/static/js/808.a04b33d3.chunk.js",
-    "static/js/723.b396edec.chunk.js": "/static/js/723.b396edec.chunk.js",
-    "static/js/113.8ce3fd42.chunk.js": "/static/js/113.8ce3fd42.chunk.js",
-    "static/media/avatar.jpg": "/static/media/avatar.3ee1c0c77db422da5b48.jpg",
-    "static/media/telegram.jpeg": "/static/media/telegram.9784777cd901a5b7e238.jpeg",
-    "index.html": "/index.html",
-    "static/media/menu.svg": "/static/media/menu.dda668b39333393011b5a13539da92ae.svg",
-    "main.a459d8d7.css.map": "/static/css/main.a459d8d7.css.map",
-    "main.21d5d16e.js.map": "/static/js/main.21d5d16e.js.map",
-    "21.319d6774.chunk.css.map": "/static/css/21.319d6774.chunk.css.map",
-    "21.9cfc0db2.chunk.js.map": "/static/js/21.9cfc0db2.chunk.js.map",
-    "808.60bd2ba0.chunk.css.map": "/static/css/808.60bd2ba0.chunk.css.map",
-    "808.a04b33d3.chunk.js.map": "/static/js/808.a04b33d3.chunk.js.map",
-    "723.b396edec.chunk.js.map": "/static/js/723.b396edec.chunk.js.map",
-    "113.8ce3fd42.chunk.js.map": "/static/js/113.8ce3fd42.chunk.js.map"
+    "main.css": "/mitrasoft-test/static/css/main.a459d8d7.css",
+    "main.js": "/mitrasoft-test/static/js/main.0a78cbe7.js",
+    "static/css/21.319d6774.chunk.css": "/mitrasoft-test/static/css/21.319d6774.chunk.css",
+    "static/js/21.9cfc0db2.chunk.js": "/mitrasoft-test/static/js/21.9cfc0db2.chunk.js",
+    "static/css/808.60bd2ba0.chunk.css": "/mitrasoft-test/static/css/808.60bd2ba0.chunk.css",
+    "static/js/808.a04b33d3.chunk.js": "/mitrasoft-test/static/js/808.a04b33d3.chunk.js",
+    "static/js/723.b396edec.chunk.js": "/mitrasoft-test/static/js/723.b396edec.chunk.js",
+    "static/js/113.8ce3fd42.chunk.js": "/mitrasoft-test/static/js/113.8ce3fd42.chunk.js",
+    "static/media/avatar.jpg": "/mitrasoft-test/static/media/avatar.3ee1c0c77db422da5b48.jpg",
+    "static/media/telegram.jpeg": "/mitrasoft-test/static/media/telegram.9784777cd901a5b7e238.jpeg",
+    "index.html": "/mitrasoft-test/index.html",
+    "static/media/menu.svg": "/mitrasoft-test/static/media/menu.dda668b39333393011b5a13539da92ae.svg",
+    "main.a459d8d7.css.map": "/mitrasoft-test/static/css/main.a459d8d7.css.map",
+    "main.0a78cbe7.js.map": "/mitrasoft-test/static/js/main.0a78cbe7.js.map",
+    "21.319d6774.chunk.css.map": "/mitrasoft-test/static/css/21.319d6774.chunk.css.map",
+    "21.9cfc0db2.chunk.js.map": "/mitrasoft-test/static/js/21.9cfc0db2.chunk.js.map",
+    "808.60bd2ba0.chunk.css.map": "/mitrasoft-test/static/css/808.60bd2ba0.chunk.css.map",
+    "808.a04b33d3.chunk.js.map": "/mitrasoft-test/static/js/808.a04b33d3.chunk.js.map",
+    "723.b396edec.chunk.js.map": "/mitrasoft-test/static/js/723.b396edec.chunk.js.map",
+    "113.8ce3fd42.chunk.js.map": "/mitrasoft-test/static/js/113.8ce3fd42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a459d8d7.css",
-    "static/js/main.21d5d16e.js"
+    "static/js/main.0a78cbe7.js"
   ]
 }
